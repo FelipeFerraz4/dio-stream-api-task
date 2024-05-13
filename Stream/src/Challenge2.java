@@ -11,7 +11,7 @@ public class Challenge2 {
 
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
-        //1º response
+        //1º answer
         // int sumTotal = 0;
         // int sumEven = 0;
         // for (Integer number : numbers) {
@@ -24,7 +24,7 @@ public class Challenge2 {
         // System.out.println(sumTotal);
         // System.out.println(sumEven);
 
-        //2º response
+        //2º answer
         int sum = numbers.stream().mapToInt(number -> number.intValue()).sum();
         
         int sumEven = numbers.stream().filter(number -> number % 2 == 0).mapToInt(number -> number.intValue()).sum(); 

@@ -1,7 +1,5 @@
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Challenge1 {
@@ -15,11 +13,11 @@ public class Challenge1 {
          * a lista de números em ordem crescente e a exiba no console.
          */
         
-        //1º response
+        //1º answer
         // Collections.sort(numbers);
         // System.out.println(numbers);
 
-        //2º response
+        //2º answer
         List<Integer> orderedNumbers = numbers.stream().sorted().collect(Collectors.toList());
         System.out.println(orderedNumbers);
     }
