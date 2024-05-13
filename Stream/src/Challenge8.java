@@ -11,5 +11,21 @@ public class Challenge8 {
 
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
         
-    }
+        int sumDigit = numbers.stream()
+            .map(number -> Challenge8.digitSum(number))
+            .reduce(0, (sum, number) -> number + sum);
+
+        System.out.println(sumDigit);
+
+
+            
+        }
+        private static int digitSum(int number) {
+            int sum = 0;
+            while (number != 0) {
+                sum += number % 10;
+                number /= 10;
+            }
+            return sum;
+        }
 }
