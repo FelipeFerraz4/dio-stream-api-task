@@ -10,5 +10,10 @@ public class Challenge15 {
          */
 
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
+
+        boolean someNegativeNumber = numbers.stream()
+            .anyMatch(number -> number < 0);
+
+        System.out.println(someNegativeNumber);
     }
 }
